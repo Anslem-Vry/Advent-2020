@@ -10,7 +10,7 @@ import (
 func main() {
   input, err := os.Open("input.txt")
   scanner := bufio.NewScanner(input)
-  i, k, l, m := 0
+  i, k, l, m := 0, 0, 0, 0
   j := 1
   var inp = new([200]int)
 
