@@ -11,8 +11,6 @@ import (
 func main() {
   input, err := os.Open("input.txt")
   scanner := bufio.NewScanner(input)
-  
-  i := 1
   total := 0
 
   if err != nil{
@@ -29,15 +27,12 @@ func main() {
     upper, err := strconv.Atoi(stringSplits2[1])
     charToCheck := stringSplits3[0]
     valueString := stringSplits1[2]
-    occurences := 0
-    for i = 0; i < len(valueString); i++ {
-      currentChar := string(valueString[i])
-      if currentChar == charToCheck{
-        occurences += 1
+    if !(len(valueString) < upper) { 
+      lowerChar := string(valueString[lower-1])
+      upperChar := string(valueString[upper-1])
+      if ((lowerChar == charToCheck) || (upperChar == charToCheck)) && !((lowerChar == charToCheck) && (upperChar == charToCheck)){
+        total +=1
       }
-    }
-    if (occurences >= lower) && (occurences <= upper){
-      total += 1
     }
     if err != nil{
       return
