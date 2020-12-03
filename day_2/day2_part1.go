@@ -11,7 +11,6 @@ import (
 func main() {
   input, err := os.Open("input.txt")
   scanner := bufio.NewScanner(input)
-  
   i := 1
   total := 0
 
@@ -43,7 +42,6 @@ func main() {
       return
     }
   }
-
   if err := scanner.Err(); err != nil {
     log.Fatal(err)
   }

@@ -31,7 +31,7 @@ func slopes(xScale int, yScale int) int {
     inp[i] = scanner.Text()
     i++
   }
-  xReset := (len(inp[0])- 1) //reset boundry for "pattern repeat"
+  xReset := (len(inp[0])- 1) //reset bounds for "pattern repeat"
   for yPos = yScale; yPos < len(inp); yPos = (yPos + yScale){
     xPos += xScale
     if (xPos > xReset){
