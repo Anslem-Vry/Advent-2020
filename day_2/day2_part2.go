@@ -38,7 +38,6 @@ func main() {
       return
     }
   }
-
   if err := scanner.Err(); err != nil {
     log.Fatal(err)
   }

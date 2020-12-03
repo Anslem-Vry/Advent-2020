@@ -22,7 +22,7 @@ func main() {
     inp[i] = scanner.Text()
     i++
   }
-  xReset := (len(inp[0])- 1) //reset boundry for "pattern repeat"
+  xReset := (len(inp[0])- 1) //reset bounds for "pattern repeat"
   for yPos = 1; yPos < len(inp); yPos ++{
     xPos += 3
     if (xPos > xReset){
