@@ -13,12 +13,12 @@ func main() {
   scanner := bufio.NewScanner(input)
   total := 0
 
-  if err != nil{
+  if err != nil {
     fmt.Println("File reading error", err)
     return
   }
   defer input.Close()
-  for scanner.Scan(){ //read each line
+  for scanner.Scan() { //read each line
     init := (scanner.Text())
     stringSplits1 := strings.Split(init, " ")
     stringSplits2 := strings.Split(stringSplits1[0], "-")
@@ -34,7 +34,7 @@ func main() {
         total +=1
       }
     }
-    if err != nil{
+    if err != nil {
       return
     }
   }

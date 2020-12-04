@@ -17,7 +17,7 @@ func main() {
 func slopes(xScale int, yScale int) int {
   input, err := os.Open("input.txt")
   scanner := bufio.NewScanner(input)
-	xPos := 0
+  xPos := 0
   yPos := 0
   i := 0
   var inp [323] string
@@ -32,13 +32,13 @@ func slopes(xScale int, yScale int) int {
     i++
   }
   xReset := (len(inp[0])- 1) //reset bounds for "pattern repeat"
-  for yPos = yScale; yPos < len(inp); yPos = (yPos + yScale){
+  for yPos = yScale; yPos < len(inp); yPos = (yPos + yScale) {
     xPos += xScale
-    if (xPos > xReset){
+    if (xPos > xReset) {
       xPos = xPos - (xReset + 1)
     }
     current := string(inp[yPos][xPos])
-    if (current == "#"){
+    if (current == "#") {
       trees +=1
     }
   }
