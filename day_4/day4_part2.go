@@ -73,7 +73,7 @@ func main() {
         }
       }
     }
-    if (byr + iyr + eyr + hgt + hcl + ecl + pid) == 7{
+    if (byr + iyr + eyr + hgt + hcl + ecl + pid) == 7 {
       total += 1
     }
   }
@@ -83,7 +83,7 @@ func main() {
 func validBirth(input string) int {
   stringSplits2 := strings.Split(input, ":")
   check, _ := strconv.Atoi(stringSplits2[1])
-  if ((check >= 1920) && (check <= 2002)){
+  if ((check >= 1920) && (check <= 2002)) {
     return 1
   }
   return 0
@@ -92,7 +92,7 @@ func validBirth(input string) int {
 func validIssue(input string) int {
   stringSplits2 := strings.Split(input, ":")
   check, _ := strconv.Atoi(stringSplits2[1])
-  if ((check >= 2010) && (check <= 2020)){
+  if ((check >= 2010) && (check <= 2020)) {
     return 1
   }
   return 0
