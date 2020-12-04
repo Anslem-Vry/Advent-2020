@@ -20,7 +20,7 @@ func main() {
   }
   defer input.Close()
   
-  for scanner.Scan(){
+  for scanner.Scan() {
     inp[i], err = strconv.Atoi(scanner.Text())
     i++
   }
@@ -33,10 +33,10 @@ func main() {
       if (inp[i] + inp[j]) < 2020 {
         m = 2020-(inp[i] + inp[j])
         fmt.Println(m)
-          for l = 0; l < 200; l++{
-            if ((l == i) || l == j){
+          for l = 0; l < 200; l++ 
+            if ((l == i) || l == j) {
               l++
-            } else if (inp[l] == m){
+            } else if (inp[l] == m) {
               k = (inp[i] * inp[j] * inp[l])
             }
           }

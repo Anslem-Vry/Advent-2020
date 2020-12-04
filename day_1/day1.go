@@ -28,7 +28,7 @@ func main() {
     log.Fatal(err)
   }
 
-  for i = 0; i < 200; i++{
+  for i = 0; i < 200; i++ {
     for j = 1; j < 200; j++ {
       if (inp[i] + inp[j] == 2020) {
         k = (inp[i] * inp[j])

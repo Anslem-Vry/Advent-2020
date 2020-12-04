@@ -19,7 +19,7 @@ func main() {
     return
   }
   defer input.Close()
-  for scanner.Scan(){ //read each line
+  for scanner.Scan() { //read each line
     init := (scanner.Text())
     stringSplits1 := strings.Split(init, " ")
     stringSplits2 := strings.Split(stringSplits1[0], "-")
@@ -35,7 +35,7 @@ func main() {
         occurences += 1
       }
     }
-    if (occurences >= lower) && (occurences <= upper){
+    if (occurences >= lower) && (occurences <= upper) {
       total += 1
     }
     if err != nil{

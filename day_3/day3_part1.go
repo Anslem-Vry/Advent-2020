@@ -25,11 +25,11 @@ func main() {
   xReset := (len(inp[0])- 1) //reset bounds for "pattern repeat"
   for yPos = 1; yPos < len(inp); yPos ++{
     xPos += 3
-    if (xPos > xReset){
+    if (xPos > xReset) {
       xPos = xPos - (xReset + 1)
     }
     current := string(inp[yPos][xPos])
-    if (current == "#"){
+    if (current == "#") {
       trees +=1
     }
   }
