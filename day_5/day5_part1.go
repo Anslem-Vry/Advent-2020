@@ -3,8 +3,6 @@ import (
   "fmt"
   "bufio"
   "os"
-  //"strconv"
-  //"strings"
 )
 
 func main() {
@@ -60,8 +58,6 @@ func main() {
     if (seatId > highestId){
       highestId = seatId
     }
-
-
     fmt.Println("sequence, row:", rowBits, "=", finalRow, "column:", columnBits, "=", finalColumn, "seat ID:", seatId, "Highest ID:", highestId)
   }
 }

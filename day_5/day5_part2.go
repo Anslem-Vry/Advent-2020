@@ -3,8 +3,6 @@ import (
   "fmt"
   "bufio"
   "os"
-  //"strconv"
-  //"strings"
 )
 
 func main() {
@@ -16,7 +14,7 @@ func main() {
   columnBits := [3]int{}
   divider := 1
   seatsTaken := [128][8]int{}
-  
+
   if err != nil{
     fmt.Println("File reading error", err)
     return
